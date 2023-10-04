@@ -1,0 +1,56 @@
+@import 'variables';
+
+.commonTextStyles {
+    color: var(--text-primary-color);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: $font-family;
+}
+
+.extraLarge {
+    font-size: 4.8rem;
+}
+
+.large {
+    font-size: 4rem;
+}
+
+.extraMedium {
+    font-size: 3.2rem;
+}
+
+.medium {
+    font-size: 2.4rem;
+}
+
+.small {
+    font-size: 1.6rem;
+}
+
+.extraSmall {
+    font-size: 1.2rem;
+}
+
+.tiny {
+    font-size: 0.8rem;
+}
+
+.secondaryText {
+    color: var(--text-secondary-color)
+}
+
+.primaryColor {
+    color: var(--primary-color);
+}
+
+.semiBold {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.light {
+    font-weight: 300;
+}

@@ -25,4 +25,4 @@
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx", "src/declaration.module.d.ts"],
 	"exclude": ["node_modules"]
-}
+}					
