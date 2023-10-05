@@ -14,14 +14,14 @@
 
 @mixin sectionCommonFooter() {
     background-color: var(--background-color-white);
-    border-top: 1px solid var(--border-color-secondary);
+    border-top: 1px solid var(--border-color-primary);
     padding: $padding-8 $padding-16;
     min-height: $header-min-height;
 }
 
 @mixin sectionCommonHeader() {
     background-color: var(--background-color-white);
-    border-bottom: 1px solid var(--border-color-secondary);
+    border-bottom: 1px solid var(--border-color-primary);
     padding: $padding-8 $padding-16;
     min-height: $header-min-height;
 }
