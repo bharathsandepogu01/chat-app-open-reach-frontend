@@ -1,0 +1,24 @@
+@import 'mixins';
+
+.loader {
+    border: 4px solid var(--primary-color);
+    border-top: 4px solid var(--text-primary-color);
+    @include circle(3rem);
+    animation: spin 1s linear infinite;
+}
+
+.smallLoader {
+    border-width: 2px;
+    height: 2rem;
+    width: 2rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

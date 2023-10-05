@@ -1,0 +1,8 @@
+.chatsListMainContainer {
+    background-color: var(--background-color-white);
+    border-right: 1px solid var(--border-color-secondary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}

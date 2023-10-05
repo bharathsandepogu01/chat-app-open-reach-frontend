@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mixins';
+
+.callbackContainer {
+    @include centerAbsoluteElement();
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 2px solid var(--border-color-primary);
+    border-radius: $border-radius;
+    padding: 3rem;
+    background-color: var(--background-color-white);
+}

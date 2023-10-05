@@ -1,0 +1,33 @@
+@import 'mixins';
+@import 'variables';
+
+.container {
+    @include sectionCommonFooter;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    input {
+        flex: 1;
+        background-color: var(--background-color-dark);
+        border: unset;
+        min-height: 3.6rem;
+        border: 1px solid var(--border-color-primary);
+        border-radius: 0.4rem;
+        padding-left: $padding-12;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.sendButton {
+    background-color: var(--background-color-white);
+}
+
+.icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--icon-color);
+}

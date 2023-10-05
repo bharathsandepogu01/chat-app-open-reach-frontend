@@ -1,0 +1,36 @@
+// declare all css common utility classes
+@import 'variables';
+
+@mixin circle($size) {
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+}
+
+@mixin icon() {
+    height: 3rem;
+    width: 3rem;
+}
+
+@mixin sectionCommonFooter() {
+    background-color: var(--background-color-white);
+    border-top: 1px solid var(--border-color-secondary);
+    padding: $padding-8 $padding-16;
+    min-height: $header-min-height;
+}
+
+@mixin sectionCommonHeader() {
+    background-color: var(--background-color-white);
+    border-bottom: 1px solid var(--border-color-secondary);
+    padding: $padding-8 $padding-16;
+    min-height: $header-min-height;
+}
+
+@mixin centerAbsoluteElement() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

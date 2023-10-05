@@ -1,0 +1,104 @@
+@import 'variables';
+@import 'mixins';
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: relative;
+    flex: 1;
+    overflow: auto;
+    overflow-anchor: none;
+}
+
+.container {
+    overflow: auto;
+    padding: $padding-16 $padding-32;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1;
+    overflow-anchor: none;
+
+    @media screen and (max-width: $mobile-screen-max-width) {
+        padding: $padding-16 $padding-16;
+    }
+}
+
+.daySeparator {
+
+    &>p {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: $margin-24;
+        margin-bottom: $margin-24;
+    }
+
+    &>p::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--border-color);
+        margin-left: $margin-24;
+    }
+
+    &>p::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--border-color);
+        margin-right: $margin-24;
+    }
+}
+
+.chatContentContainer {
+    width: 80%;
+    min-width: 100px;
+    max-width: fit-content;
+    position: relative;
+
+    &>p:nth-child(2) {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 0.4rem;
+    }
+}
+
+.chatContainerColored {
+    margin-left: auto;
+
+    &>p:nth-child(2) {
+        opacity: 0.75;
+    }
+}
+
+.content {
+    padding: $padding-12 $padding-16;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color-secondary);
+    font-size: 1.4rem;
+}
+
+.contentColored {
+    background-color: var(--primary-color);
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: unset;
+    border: unset;
+}
+
+.loaderContainer {
+    margin: auto;
+    width: fit-content;
+}
+
+.timeIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    margin-top: 0.2rem;
+}

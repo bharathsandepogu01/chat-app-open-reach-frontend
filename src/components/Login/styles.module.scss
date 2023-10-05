@@ -1,0 +1,47 @@
+@import 'variables';
+
+.loginContainer {
+    display: flex;
+    background-color: var(--background-color-primary);
+    min-height: 100vh;
+    padding: 1.6rem;
+}
+
+.headingTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--background-color-white);
+
+    overflow: auto;
+    padding: 3.2rem 9.6rem;
+
+    @media screen and (max-width: $desktop-screen-max-width) {
+        padding: 3.2rem 6.4rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    @media screen and (max-width: $mobile-screen-max-width) {
+        padding: 1.2rem 1.6rem;
+    }
+
+    &>p {
+        margin-top: 3.6rem;
+    }
+
+    &>button {
+        margin-top: $margin-32;
+        padding: $padding-8 $padding-16;
+        border: 1px solid var(--border-color-primary);
+        background-color: var(--background-color-white);
+
+        &>img {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+}
