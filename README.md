@@ -1,7 +1,7 @@
 # chat-app-open-reach-frontend
 
 ![1](https://github.com/bharathsandepogu01/chat-app-open-reach-frontend/assets/86849197/111f653b-d3da-4bde-905c-2714c22b53d0)
-![2](https://github.com/bharathsandepogu01/chat-app-open-reach-frontend/assets/86849197/065a5d23-b4d5-4845-a588-28a878459b8a)
+![4](https://github.com/bharathsandepogu01/chat-app-open-reach-frontend/assets/86849197/2aa73eff-80d2-47ce-ab4a-7230b9c14128)
 ![3](https://github.com/bharathsandepogu01/chat-app-open-reach-frontend/assets/86849197/0c05feb7-8629-4ce3-ac46-ea1b71c2c3ff)
 
 ## Table of Contents
