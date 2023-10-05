@@ -11,7 +11,6 @@ const initialState: IUserDetailsState = {
 
 export const fetchUserDetails = createAsyncThunk('user/fetchDetails', async (email: string) => {
 	const data = await getUserDetailsFromStore(email);
-	console.log(data);
 	return data;
 });
 

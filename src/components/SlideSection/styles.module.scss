@@ -1,0 +1,55 @@
+@import 'variables';
+
+.container {
+    transition: transform 0.3s linear, width 0.3s linear;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--background-color-white);
+
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: $padding-16;
+        min-height: $header-min-height-double;
+        border-bottom: 1px solid var(--border-color-secondary);
+
+        &>button {
+            background-color: transparent;
+        }
+
+        &>span {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &>main {
+        flex: 1;
+    }
+}
+
+.containerLeft {
+    transform: translateX(-100%);
+}
+
+.containerAbsolute {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideInContainer {
+    transform: translateX(0);
+}
+
+.icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}

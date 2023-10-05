@@ -1,0 +1,48 @@
+@import 'mixins';
+
+.container {
+    @include sectionCommonHeader;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    &>button {
+        background-color: unset;
+    }
+}
+
+.icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--icon-color);
+}
+
+.image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 999px;
+}
+
+.profileContentContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-light);
+    gap: 2.4rem;
+    overflow: auto;
+    padding: $padding-24;
+
+    .image {
+        height: 200px;
+        width: 200px;
+        border-radius: 999px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoContainer {
+        &>p:nth-child(2) {
+            margin-top: $margin-8;
+        }
+    }
+}

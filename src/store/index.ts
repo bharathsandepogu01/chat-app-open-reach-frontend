@@ -1,9 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
 import userSlice from './userDetailsSlice';
+import usersListSlice from './usersListSlice';
+import chatListSlice from './chatListSlice';
+import selectedUserChatSlice from './selectedUserChatSlice/index';
 
 export const store = configureStore({
 	reducer: {
 		userDetails: userSlice,
+		usersList: usersListSlice,
+		chatList: chatListSlice,
+		selectedUserChat: selectedUserChatSlice,
 	},
 });
 

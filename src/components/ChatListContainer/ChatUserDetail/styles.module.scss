@@ -1,0 +1,42 @@
+.chatUser {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--background-color-secondary);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 95%;
+        top: 100%;
+        left: 2.5%;
+        background-color: var(--border-color-secondary);
+    }
+}
+
+.bgColored {
+    background-color: var(--background-color-secondary);
+}
+
+.name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.icon {
+    height: 4rem;
+    width: 4rem;
+    background-color: gray;
+    border-radius: 999px;
+    padding: 0.8rem;
+    fill: var(--primary-color);
+}

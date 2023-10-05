@@ -1,0 +1,19 @@
+@import 'variables';
+
+.chatsMainContainer {
+    position: relative;
+    background-color: var(--background-color-white);
+    display: flex;
+    overflow: hidden;
+}
+
+.welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color-white);
+    gap: 1rem;
+    overflow: auto;
+}

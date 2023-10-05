@@ -1,0 +1,39 @@
+@import 'variables';
+
+.searchBar {
+    background-color: var(--background-color-medium);
+    border-radius: $border-radius;
+    margin: $margin-8 $margin-12;
+    padding: $padding-8;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--border-color-primary);
+
+    &>button {
+        background-color: var(--background-color-white);
+    }
+
+    .icon {
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+
+    .arrowIcon {
+        height: 1.75rem;
+        width: 1.65rem;
+        transform: rotate(180deg);
+    }
+
+    input {
+        flex: 1;
+        background-color: transparent;
+        border: unset;
+        min-height: 2.4rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
